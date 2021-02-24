@@ -1,3 +1,12 @@
+# Natural Events Tracker (React, NASA and Google Maps api)
+
+Web app that shows on map the location of various Natural Events.
+
+-Volcanos
+-Severe Storms
+-Wildefires
+-Icebergs
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
