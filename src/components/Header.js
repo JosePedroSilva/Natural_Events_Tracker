@@ -4,10 +4,7 @@ import locationIcon from "@iconify/icons-mdi/fire-alert";
 const Header = () => {
   return (
     <header className="header">
-      <h1>
-        <Icon icon={locationIcon} />
-        Wildfire Tracker
-      </h1>
+      <h1>Natural Events Tracker</h1>
     </header>
   );
 };

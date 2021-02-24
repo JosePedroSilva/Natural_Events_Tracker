@@ -8,12 +8,13 @@ const Map = ({ eventData, center, zoom }) => {
   const [locationInfo, setLocationInfo] = useState(null);
 
   const markers = eventData.map((ev) => {
-    if (ev.categories[0].id === 8) {
+    if (ev.id !== "EONET_354") {
       return (
         <LocationMarker
           lat={ev.geometries[0].coordinates[1]}
           lng={ev.geometries[0].coordinates[0]}
           onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
+          type={ev.categories[0].id}
         />
       );
     }
@@ -36,10 +37,10 @@ const Map = ({ eventData, center, zoom }) => {
 
 Map.defaultProps = {
   center: {
-    lat: 42.3265,
-    lng: -122.8756,
+    lat: 49,
+    lng: 10,
   },
-  zoom: 6,
+  zoom: 5,
 };
 
 export default Map;
